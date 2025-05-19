@@ -1,0 +1,9 @@
+{% extends 'app.html' %}
+
+{% block content %}
+
+<h1>hello : {{ request.user.username}}<h2>
+
+<a href="{% url 'logout' %}" class="btn btn-dark">Logout</a>
+
+{% endblock %}
